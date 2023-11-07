@@ -21,6 +21,8 @@ print('arr', arr)
 time_pre = -1
 dq = deque()
 
+
+
 def combine_positions(results):
     outputs = []
     
@@ -134,7 +136,6 @@ def main():
             params = {"name": "koko1"}
             data = json.dumps(avgs)
             headers = {"Content-Type": "application/json"}
-            # response = requests.put("http://192.168.55.59:8080/positions/update", params=params, data=data, headers=headers)
             response = requests.put("http://ec2-43-202-59-190.ap-northeast-2.compute.amazonaws.com:8080/positions/update", params=params, data=data, headers=headers)
             
             # write_csv(outputs)
