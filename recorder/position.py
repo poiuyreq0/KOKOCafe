@@ -41,9 +41,9 @@ def onMouse(event,x,y,flags,param):
                 cv2.imshow('img', img_draw)
 
                 root = tk.Tk()
-                root.title("Enter a Position")
+                root.title("Enter the Position")
                 
-                label = tk.Label(root, text="Please enter a position: ")
+                label = tk.Label(root, text="Please enter the position: ")
                 label.pack()
                 
                 number_entry = tk.Entry(root)

@@ -136,7 +136,7 @@ def main():
             params = {"name": "koko1"}
             data = json.dumps(avgs)
             headers = {"Content-Type": "application/json"}
-            response = requests.put("http://ec2-43-202-59-190.ap-northeast-2.compute.amazonaws.com:8080/positions/update", params=params, data=data, headers=headers)
+            response = requests.put("http://ec2-3-34-131-7.ap-northeast-2.compute.amazonaws.com/positions/update", params=params, data=data, headers=headers)
             
             # write_csv(outputs)
 
